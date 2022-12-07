@@ -1,0 +1,19 @@
+{
+  "authorisationError": "Ошибка авторизации!",
+  "title": ".page-header__title",
+  "daysWeek": ".page-nav__day",
+  "chooseFilm": ".movie",
+  "buttonLoginIn": "[class='login__button']",
+  "email": "[for='email'] .login__input",
+  "password": "[for='pwd'] .login__input",
+  "deskForEqual": "Управление залами",
+  "hallOpening": "#start-sales",
+  "nameHall": "data.newHall",
+  "chooseTimeSession": "a.page-nav__day:nth-of-type(4)",
+  "timeSession": "10:00",
+  "timeSession1": "[data-film-id='93']",
+  "timeSessionForEqual": "Начало сеанса: 10:00",
+  "chooseChair": ".buying-scheme__wrapper > :nth-child(7) > :nth-child(8)",
+  "pushButton": ".acceptin-button",
+  "takeTicket": "Электронный билет"
+}

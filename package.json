@@ -1,0 +1,16 @@
+{
+  "name": "7.7-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dash": "npx cypress run --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
+    "e2e:run": "npx cypress run --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.0.1"
+  }
+}
