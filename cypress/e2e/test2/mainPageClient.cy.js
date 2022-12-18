@@ -1,4 +1,4 @@
-const selector = require("../fixtures/selector.json");
+const selector = require("../../fixtures/selector.json");
 
 describe("Should show correct display of the home page", () => {
   beforeEach(() => {

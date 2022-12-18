@@ -1,5 +1,5 @@
-const selector = require("../fixtures/selector.json");
-const login = require("../fixtures/login.json");
+const selector = require("../../fixtures/selector.json");
+const login = require("../../fixtures/login.json");
 
 it("Should find a hall that sells tickets", () => {
   cy.visit("/admin");
