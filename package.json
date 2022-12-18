@@ -1,16 +1,20 @@
 {
-  "name": "7.7-11",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dash": "npx cypress run --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
-    "e2e:run": "npx cypress run --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d"
+    "e2e": "cypress open --browser chrome",
+    "e2e:run": "cypress run --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
+    "test:login": "cypress run --spec cypress/e2e/login.cy.js --group login --ci-build-id %BUILD_NUMBER% --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
+    "test:mainPageClient": "cypress run --spec cypress/e2e/mainPageClient.cy.js --group mainPageClient --ci-build-id %BUILD_NUMBER% --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
+    "test:movieBooking": "cypress run --spec cypress/e2e/movieBooking.cy.js --group movieBooking --ci-build-id %BUILD_NUMBER% --record --key ae7a8cbe-eb31-4131-a3de-ee6ceac6fb8d",
+    "test:parallel": "npm run test:login & npm run test:mainPageClient & npm run test:movieBooking"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.0.1"
+    "cypress": "^12.1.0"
   }
 }
